@@ -34,8 +34,8 @@ public class ImageService {
         //In case the image is null, return 0
            if(image==null) return 0;
            String imageDimension = image.getDimensions();
-           String first[] = imageDimension.split("\\*");
-           String second[] = screenDimensions.split("\\*");
+           String first[] = imageDimension.split("X");
+           String second[] = screenDimensions.split("X");
            return Integer.parseInt(second[0])*Integer.parseInt(second[1])/(Integer.parseInt(first[0])*Integer.parseInt(first[1]));
     }
 }
