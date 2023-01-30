@@ -21,7 +21,7 @@ public class Image {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     
-    private String descriptions;
+    private String description;
     private String dimensions;
     
     @ManyToOne
@@ -38,12 +38,12 @@ public class Image {
         this.id = id;
     }
 
-    public String getDescriptions() {
-        return descriptions;
+    public String getDescription() {
+        return description;
     }
 
-    public void setDescriptions(String descriptions) {
-        this.descriptions = descriptions;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public String getDimensions() {
